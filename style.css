@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 24px;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 60px;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: #bdbdbd;
+  margin-left: 24px;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.nav__item--active {
+  color: #333;
+}
+
+.nav-btn {
+  border: none;
+  background: -webkit-gradient(linear, right top, left top, from(#FAA245), color-stop(37.25%, #D8328A), to(#753872));
+  background: linear-gradient(270deg, #FAA245 0%, #D8328A 37.25%, #753872 100%);
+  padding: 10px 36px;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.main-content__heading {
+  font-size: 52px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content__description {
+  color: #828282;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 46px;
+}
+
+.play-btn {
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  padding: 10px 36px;
+  background-color: transparent;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, right top, left top, from(#FAA245), color-stop(37.25%, #D8328A), to(#753872));
+  background: linear-gradient(270deg, #FAA245 0%, #D8328A 37.25%, #753872 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.play-btn .fa {
+  font-size: 1.25rem;
+  background: inherit;
+  margin-right: 6px;
+}
+
+.main-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #bdbdbd;
+}
+
+.socials {
+  margin-right: 40px;
+}
+
+.socials__link {
+  margin-right: 12px;
+}
+
+.socials i {
+  color: #bdbdbd;
+}
+
+.socials i:hover {
+  color: purple;
+}
+
+.hamburger-btn {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: none;
+}
+
+.hamburger-btn button {
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-navigation {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 24px;
+  display: none;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.mobile-navigation--open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-navigation__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.mobile-navigation__close-btn button {
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-navigation__item {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #bdbdbd;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.mobile-navigation__item--active {
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    display: block;
+  }
+  header .logo {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .mobile-navigation {
+    display: block;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
